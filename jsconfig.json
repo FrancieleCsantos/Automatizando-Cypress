@@ -1,4 +1,17 @@
 
+// {
+//   "include": ["node_modules/cypress", "cypress/**/*.js"]
+// }
+
 {
-  "include": ["node_modules/cypress", "cypress/**/*.js"]
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "types": ["cypress"]
+  },
+  "include": [
+    "cypress/**/*.js",
+    "cypress/**/*.ts"
+  ]
 }
